@@ -1,24 +1,23 @@
 # YouTube Comments Sentiment Analysis - AWS Data Engineering Project
 
 ## Overview
-This project demonstrates an end-to-end data engineering workflow using **AWS S3 + AWS Glue + Python Pandas** to analyze YouTube comments for sentiment.
+This project demonstrates an end-to-end data engineering workflow using **AWS S3 + AWS Glue + Python Pandas + Amazon Redshift** to analyze YouTube comments for sentiment.
 
 ### Key Features
 - Read raw comments CSV from S3
-- Perform data cleaning and sentiment classification (`positive`, `negative`, `neutral`)
-- Save processed output back to S3
-- Ready for Redshift or other analytics platforms
+- Perform data cleaning and sentiment classification (`positive`, `negative`, `neutral`) using Python Pandas in AWS Glue
+- Load processed data into Amazon Redshift using SQL COPY commands for validation and analysis.
+- Run SQL queries in Redshift to validate, aggregate, and explore data
 
 ### Tools & Services
 - AWS S3 (raw and processed storage)
 - AWS Glue Python Shell Job
 - Python (pandas, s3fs)
-- Optional: Amazon Redshift (for future data warehouse integration)
+- Amazon Redshift (data warehouse integration)
 
 ### File Structure
 - `glue-python-scripts/youtube-pandas-etl.py` → ETL script
 - `data/sample_youtube_comments.csv` → sample dataset
-- `notebooks/exploration.ipynb` → optional local analysis
 - `requirements.txt` → Python dependencies
 
 ### Demo / Screenshots
@@ -26,5 +25,8 @@ This project demonstrates an end-to-end data engineering workflow using **AWS S3
 #### Glue Job Run
 ![Glue Job Run](images/glue-job-run.png)
 
-#### Processed CSV in S3
-![S3 Output](images/s3-output.png)
+#### Total Sentiment count in Redshift for analysis
+![Sentiment_total_count](images/sentiment_count.png)
+
+#### Sentiment prediction in Redshift
+![Sentiment_prediction](images/sentiment_prediction.png)
