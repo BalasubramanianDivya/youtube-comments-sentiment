@@ -20,7 +20,6 @@ This project demonstrates an end-to-end data engineering workflow using **AWS S3
 - `data/sample_youtube_comments.csv` → sample dataset
 - `requirements.txt` → Python dependencies
 
-<<<<<<< HEAD
 ### Demo / Screenshots
 
 #### Glue Job Run
@@ -31,5 +30,3 @@ This project demonstrates an end-to-end data engineering workflow using **AWS S3
 
 #### Sentiment prediction in Redshift
 ![Sentiment_prediction](images/sentiment_prediction.png)
-=======
->>>>>>> ef4964a (Local README edits before pulling)
