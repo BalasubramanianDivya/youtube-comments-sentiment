@@ -21,7 +21,10 @@ This project demonstrates an end-to-end data engineering workflow using **AWS S3
 - `notebooks/exploration.ipynb` → optional local analysis
 - `requirements.txt` → Python dependencies
 
-### Usage
-1. Upload your CSV to S3:
-   ```bash
-   aws s3 cp youtube_comments.csv s3://your-bucket/raw/
+### Demo / Screenshots
+
+#### Glue Job Run
+![Glue Job Run](images/glue-job-run.png)
+
+#### Processed CSV in S3
+![S3 Output](images/s3-output.png)
